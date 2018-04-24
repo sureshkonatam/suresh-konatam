@@ -1,0 +1,7 @@
+
+<h1>Holidays List</h1>
+  <mat-grid-list cols="3" rowHeight="4:1">
+    <mat-grid-tile *ngFor="let link of holidayNames">
+        <a matLine href="javascript:void(0)" (click)="navigateToDetail(link)">{{ link }}</a>
+    </mat-grid-tile>
+  </mat-grid-list>
